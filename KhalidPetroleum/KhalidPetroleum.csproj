@@ -3534,6 +3534,7 @@
     <Content Include="Views\Main\DailyExpenses.cshtml" />
     <Content Include="Views\Main\CashReceived.cshtml" />
     <Content Include="Views\Main\Payments.cshtml" />
+    <Content Include="Views\Main\Maintenance.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

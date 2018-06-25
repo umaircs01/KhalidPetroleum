@@ -15,7 +15,6 @@ namespace KhalidPetroleum.Controllers
         {
             return View();
         }
-
         public ActionResult SignIn()
         {
             return View();
@@ -41,6 +40,10 @@ namespace KhalidPetroleum.Controllers
             return View();
         }
 		public ActionResult Payments()
+        {
+            return View();
+        }
+		public ActionResult Maintenance()
         {
             return View();
         }
