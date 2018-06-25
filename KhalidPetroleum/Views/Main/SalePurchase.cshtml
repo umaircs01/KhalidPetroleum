@@ -1,0 +1,630 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Vehicle Management System</title>
+    <!-- Favicon-->
+    <link rel="icon" href="~/Content/images/khalid.jpg" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core Css -->
+    <link href="~/Content/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Waves Effect Css -->
+    <link href="~/Content/plugins/node-waves/waves.css" rel="stylesheet" />
+    <!-- Animation Css -->
+    <link href="~/Content/plugins/animate-css/animate.css" rel="stylesheet" />
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="~/Content/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+    <!-- Custom Css -->
+    <link href="~/Css/style.css" rel="stylesheet">
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="~/Css/themes/all-themes.css" rel="stylesheet" />
+</head>
+<body class="theme-blue">
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand">Khalid Group of Petroleum | Sale/Purchase</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Notifications -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">Menu</li>
+                            <li class="body">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="/Main/SignIn">
+                                            <div class="icon-circle bg-light-green">
+                                                <i class="material-icons">input</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4>Logout</h4>
+                                                <p>
+                                                    Exit the system
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Notifications -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+            <div class="user-info">
+                <div class="image">
+                    <img src="~/Content/images/khalid.jpg" width="48" height="48" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Farukh Khalid</div>
+                    <div class="email">info@khalidgroup.com.pk</div>
+                </div>
+            </div>
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li>
+                        <a href="/Main/Index">
+                            <i class="material-icons">home</i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+    </section>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>SALE/PURCHASE</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                VEHICLE DETAILS
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="datePicker">Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="txtDate" class="datepicker form-control" placeholder="Please choose a date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="vehicleNo">Vehicle No</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id=txtVechileNo class="form-control" placeholder="Enter Vehicle Number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="captainName">Captain</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id=txtCaptainName class="form-control" placeholder="Enter Driver's Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="openingMeter">Opening Meter</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtOpeningMeter class="form-control" placeholder="Enter Reading of meter">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary m-t-15 waves-effect">SAVE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                PURCHASE
+                                <small>Depot Detail</small>
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="depotCode">Code</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="txtDepotCode" class="form-control" placeholder="Enter Depot Code">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="depotName">Name</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id=txtDepotName class="form-control" placeholder="Depot Name" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="newDepot">New Depot</label>
+                                        <div class="form-group">
+                                            <div class="button-demo js-modal-buttons">
+                                                <button type="button"  class="btn bg-light-blue waves-effect" data-toggle="modal" data-target="#mdModal">+ Add New</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="totalQuantity">Total Quantity</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id="txtTotalQuantity" class="form-control" placeholder="Enter total amount of fuel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="superFuel">SUP</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtSUP class="form-control" placeholder="Enter amout of super">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="dieselFuel">HSD</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtSUP class="form-control" placeholder="Enter amout of diesel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary m-t-15 waves-effect">SAVE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                DIFFERENCE
+                                <small>Temperature Gain/Loss</small>
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <form>
+                                <label for="super">SUP</label>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="txtPumpSup" class="datepicker form-control" placeholder="Pump">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id=txtMachiKeySup class="form-control" placeholder="MachiKey">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id=txtRateSup class="form-control" placeholder="Rate">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtQuantitySup class="form-control" placeholder="Quantity">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form>
+                                <label for="diesel">HSD</label>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="txtPumpHsd" class="datepicker form-control" placeholder="Pump">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id=txtMachiKeyHsd class="form-control" placeholder="MachiKey">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id=txtRateHsd class="form-control" placeholder="Rate">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtQuantityHsd class="form-control" placeholder="Quantity">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                EXPENSES
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="ToolExp">Tool Exp</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtToolExp class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="MunshiExp">Munshi Exp</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtMunshiExp class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="ParkingExp">Parking/Maint</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtParkingExp class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="GuardExp">Guard Exp</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtGuardExp class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="MealExp">Meal Exp</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtMealExp class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="OtherExp">Others</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtOtherExp class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="Exp">Expenses Provided</label>
+                                        <div class="form-group">
+                                            <div class="form-line focused">
+                                                <input type="number" id=txtExpProvided value="Focused" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="GainLoss">Gain/Loss</label>
+                                        <div class="form-group">
+                                            <div class="form-line disabled">
+                                                <input type="number" id=txtGainLoss class="form-control" placeholder="" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                FUEL CONSUMPTION
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <div class="row">
+                                <form>
+                                    <div>
+                                        <div class="col-md-3">
+                                            <label for="HSD">HSD</label>
+                                            <div class="form-group">
+                                                <div class="form-line">
+                                                    <input type="text" id="txtRateHsdFuel" class="datepicker form-control" placeholder="Rate">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for=""> </label>
+                                            <div class="form-group">
+                                                <div class="form-line">
+                                                    <input type="text" id=txtQuantityHsdFuel class="form-control" placeholder="Quantity">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="col-md-3">
+                                            <label for="Lube">Lube</label>
+                                            <div class="form-group">
+                                                <div class="form-line">
+                                                    <input type="text" id="txtRateLubeFuel" class="datepicker form-control" placeholder="Rate">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for=""> </label>
+                                            <div class="form-group">
+                                                <div class="form-line">
+                                                    <input type="text" id=txtQuantityLubeFuel class="form-control" placeholder="Quantity">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="ClosingMeter">Closing Meter</label>
+                                    <div class="form-group">
+                                        <div class="form-line focused">
+                                            <input type="number" id=txtClosingMeter value="Focused" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="km">Total Kilometers</label>
+                                    <div class="form-group">
+                                        <div class="form-line disabled">
+                                            <input type="number" id=txtKilometers class="form-control" placeholder="" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="average">Average</label>
+                                    <div class="form-group">
+                                        <div class="form-line disabled">
+                                            <input type="number" id=txtAverage class="form-control" placeholder="" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                SALE
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="DeliveryNo">Delivery No</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id="txtDeliveryNo" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="Quanity">Quantity</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtSaleQuantity class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="OffloadSite">Unload Site</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id=txtUnloadSite class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="recepit">Upload Receipt</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="file" id="fileUpload" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" name="addDom" class="btn btn-primary m-t-15 waves-effect">SAVE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Modal Start-->
+
+            <div class="modal fade" id="mdModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content modal-col-light-blue">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="defaultModalLabel">ADD NEW DEPOT</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div id="alertdiv" class="row">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="depotCode">Code</label>
+                                            <input type="text" id="txtNewDepotCode" class="form-control" placeholder="">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <label for="depotName">Name</label>
+                                            <input type="text" id="txtNewDepotName" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-link waves-effect">SAVE CHANGES</button>
+                            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Modal End-->
+
+
+        </div>
+    </section>
+    <script>$(document).ready(function() {
+
+            $("button[name='addDom']").click(function() {
+                var domElement = $('<div class="body">
+                    < form >
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="DeliveryNo">Delivery No</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <input type="number" id="txtDeliveryNo" class="form-control" placeholder="">
+                                                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="Quanity">Quantity</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="number" id=txtSaleQuantity class="form-control" placeholder="">
+                                                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="OffloadSite">Unload Site</label>
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" id=txtUnloadSite class="form-control" placeholder="">
+                                                                    </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="recepit">Upload Receipt</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="file" id="fileUpload" class="form-control" placeholder="">
+                                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary m-t-15 waves-effect">SAVE</button>
+                                                    </form>
+                            </div>');
+                                        $(this).after(domElement);
+                                    });
+
+});</script>
+    <!-- Jquery Core Js -->
+    <script src="~/Content/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core Js -->
+    <script src="~/Content/plugins/bootstrap/js/bootstrap.js"></script>
+    <!-- Select Plugin Js -->
+    <script src="~/Content/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+    <!-- Slimscroll Plugin Js -->
+    <script src="~/Content/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- Waves Effect Plugin Js -->
+    <script src="~/Content/plugins/node-waves/waves.js"></script>
+    <!-- Custom Js -->
+    <script src="~/Scripts/js/admin.js"></script>
+    <!-- Bootstrap Notify Plugin Js -->
+    <script src="~/Content/plugins/bootstrap-notify/bootstrap-notify.js"></script>
+    <!-- Moment Plugin Js -->
+    <script src="~/Content/plugins/momentjs/moment.js"></script>
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="~/Content/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+    <!-- Demo Js -->
+    <script src="~/Scripts/js/demo.js"></script>
+    <!-- Custom Js -->
+    <script src="~/Scripts/js/admin.js"></script>
+    <script src="~/Scripts/js/pages/ui/modals.js"></script>
+</body>
+</html>
