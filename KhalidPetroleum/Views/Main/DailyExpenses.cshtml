@@ -13,7 +13,6 @@
     <link href="~/Content/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- JQuery DataTable Css -->
     <link href="~/Content/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
-
     <!-- Bootstrap Material Datetime Picker Css -->
     <link href="~/Content/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
     <!-- Waves Effect Css -->
@@ -24,6 +23,9 @@
     <link href="~/Css/style.css" rel="stylesheet">
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="~/Css/themes/all-themes.css" rel="stylesheet" />
+    <!-- JQuery DatePicker -->
+    <link rel="stylesheet" href="~Content/plugins/jquery-ui/jquery-ui.css">
+
 </head>
 <body class="theme-blue">
     <!-- Top Bar -->
@@ -120,7 +122,7 @@
                                         <label for="datePicker">Date</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id="txtDate" class="datepicker form-control" placeholder="Please choose a date">
+                                                <input type="text" id="datepicker" class="form-control" placeholder="Please choose a date">
                                             </div>
                                         </div>
                                     </div>
@@ -290,6 +292,12 @@
     <script src="~/Content/plugins/momentjs/moment.js"></script>
     <!-- Bootstrap Material Datetime Picker Plugin Js -->
     <script src="~/Content/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+    <!-- JQuery Datetime Picker -->
+    <script src="~Content/plugins/jquery-1.12.4/jquery-1.12.4.js"></script>
+    <script src="~Content/plugins/jquery-ui/jquery-ui.js"></script>
+    <script>$(function() {
+            $("#datepicker").datepicker();
+});</script>
 
 
 </body>

@@ -3535,10 +3535,15 @@
     <Content Include="Views\Main\CashReceived.cshtml" />
     <Content Include="Views\Main\Payments.cshtml" />
     <Content Include="Views\Main\Maintenance.cshtml" />
+    <Content Include="Content\plugins\jquery-ui\jquery-ui.js" />
+    <Content Include="Content\plugins\jquery-1.12.4\jquery-1.12.4.js" />
+    <Content Include="Content\plugins\jquery-ui\jquery-ui.css" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Content\plugins\jquery-ui\" />
+    <Folder Include="Content\plugins\jquery-1.12.4\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -44,7 +44,7 @@ D:/VisualStudioProjects/KhalidPetroleum/KhalidPetroleum/obj/Debug/KhalidPetroleu
 /Users/umair/Desktop/KhalidPetroleum/KhalidPetroleum/bin/System.Web.WebPages.xml
 /Users/umair/Desktop/KhalidPetroleum/KhalidPetroleum/bin/System.Web.WebPages.Deployment.xml
 /Users/umair/Desktop/KhalidPetroleum/KhalidPetroleum/bin/System.Web.WebPages.Razor.xml
-/Users/umair/Desktop/KhalidPetroleum/KhalidPetroleum/obj/Debug/KhalidPetroleum.csprojResolveAssemblyReference.cache
 /Users/umair/Desktop/KhalidPetroleum/KhalidPetroleum/obj/Debug/KhalidPetroleum.csproj.CoreCompileInputs.cache
 /Users/umair/Desktop/KhalidPetroleum/KhalidPetroleum/obj/Debug/KhalidPetroleum.dll
 /Users/umair/Desktop/KhalidPetroleum/KhalidPetroleum/obj/Debug/KhalidPetroleum.pdb
+/Users/umair/Desktop/KhalidPetroleum/KhalidPetroleum/obj/Debug/KhalidPetroleum.csprojResolveAssemblyReference.cache
