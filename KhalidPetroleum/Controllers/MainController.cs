@@ -47,5 +47,13 @@ namespace KhalidPetroleum.Controllers
         {
             return View();
         }
+		public ActionResult Tasks()
+        {
+            return View();
+        }
+		public ActionResult Staff()
+        {
+            return View();
+        }
     }
 }

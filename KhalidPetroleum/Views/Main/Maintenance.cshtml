@@ -93,6 +93,18 @@
                             <span>Home</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="/Main/Staff">
+                            <i class="material-icons">person</i>
+                            <span>Manage Staff</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">equalizer</i>
+                            <span>Stats</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </aside>
@@ -114,7 +126,7 @@
                         <div class="body">
                             <form>
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-3">
                                         <label for="datePicker">Date</label>
                                         <div class="form-group">
                                             <div class="form-line">
@@ -122,27 +134,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-3">
                                         <label for="vehicleNo">Vehicle Code</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id=txtVechileNo class="form-control" placeholder="Enter Vehicle Code">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="captainName">Captain</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id=txtCaptainName class="form-control" placeholder="Enter Driver's Name">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="openingMeter">Opening Meter</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="number" id=txtOpeningMeter class="form-control" placeholder="Enter Reading of meter">
                                             </div>
                                         </div>
                                     </div>
@@ -153,9 +149,12 @@
                                                 <button type="button" class="btn bg-light-blue waves-effect" data-toggle="modal" data-target="#mdModal">+ Add New</button>
                                             </div>
                                         </div>
+                                    </div><br><br><br>
+                                    <div align="right" style="padding-right:15px">
+                                        <button type="button" class="btn btn-primary m-t-15 waves-effect">SEARCH</button>
                                     </div>
                                 </div>
-                            </form>
+                             </form>
                         </div>
                     </div>
                 </div>
@@ -165,181 +164,125 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                                CHECKLIST
+                                MAINTENANCE
                             </h2>
                         </div>
                         <div class="body">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Sr#</th>
-                                        <th>Details</th>
-                                        <th>Yes/No</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Cabin is Clean</td>
-                                        <td><input type="checkbox" id="checkbox_1" class="filled-in chk-col-light-blue" /><label for="checkbox_1"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Radiator water is full</td>
-                                        <td><input type="checkbox" id="checkbox_2" class="filled-in chk-col-light-blue"><label for="checkbox_2"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Engine oil is full</td>
-                                        <td><input type="checkbox" id="checkbox_3" class="filled-in chk-col-light-blue"><label for="checkbox_3"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Battery water is full</td>
-                                        <td><input type="checkbox" id="checkbox_4" class="filled-in chk-col-light-blue"><label for="checkbox_4"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>All lights are working</td>
-                                        <td><input type="checkbox" id="checkbox_5" class="filled-in chk-col-light-blue"><label for="checkbox_5"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">6</th>
-                                        <td>First aid box is complete</td>
-                                        <td><input type="checkbox" id="checkbox_6" class="filled-in chk-col-light-blue"><label for="checkbox_6"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">7</th>
-                                        <td>Tool box is complete</td>
-                                        <td><input type="checkbox" id="checkbox_7" class="filled-in chk-col-light-blue"><label for="checkbox_7"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">8</th>
-                                        <td>Air in tyres is checked</td>
-                                        <td><input type="checkbox" id="checkbox_8" class="filled-in chk-col-light-blue"><label for="checkbox_8"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">9</th>
-                                        <td>All meters are working</td>
-                                        <td><input type="checkbox" id="checkbox_9" class="filled-in chk-col-light-blue"><label for="checkbox_9"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">10</th>
-                                        <td>Fire cylinder is not expired</td>
-                                        <td><input type="checkbox" id="checkbox_10" class="filled-in chk-col-light-blue"><label for="checkbox_10"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">11</th>
-                                        <td>Staff uniform is complete and clean</td>
-                                        <td><input type="checkbox" id="checkbox_11" class="filled-in chk-col-light-blue"><label for="checkbox_11"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">12</th>
-                                        <td>Registration book</td>
-                                        <td><input type="checkbox" id="checkbox_12" class="filled-in chk-col-light-blue"><label for="checkbox_12"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">13</th>
-                                        <td>Root permit</td>
-                                        <td><input type="checkbox" id="checkbox_13" class="filled-in chk-col-light-blue"><label for="checkbox_13"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">14</th>
-                                        <td>Insurance is not expired</td>
-                                        <td><input type="checkbox" id="checkbox_14" class="filled-in chk-col-light-blue"><label for="checkbox_14"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">15</th>
-                                        <td>Dip chart is not expired</td>
-                                        <td><input type="checkbox" id="checkbox_15" class="filled-in chk-col-light-blue"><label for="checkbox_15"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">16</th>
-                                        <td>Log book is complete</td>
-                                        <td><input type="checkbox" id="checkbox_16" class="filled-in chk-col-light-blue"><label for="checkbox_16"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">17</th>
-                                        <td>Weekly greasing is done</td>
-                                        <td><input type="checkbox" id="checkbox_17" class="filled-in chk-col-light-blue"><label for="checkbox_17"></label></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">18</th>
-                                        <td>Monthly checkup is done</td>
-                                        <td><input type="checkbox" id="checkbox_18" class="filled-in chk-col-light-blue"><label for="checkbox_18"></label></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>
-                                MAINTENANCE REQUIRED
-                            </h2>
-                        </div>
-                        <div class="body">
-                            <form class="form-horizontal">
-                                <div class="row clearfix">
-                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                        <label for="email_address_2">1.</label>
-                                    </div>
-                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label>Lube Change Date</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id="email_address_2" class="form-control" placeholder="">
+                                                <input type="text" id="txtLubeChangeDate" class="datepicker form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Oil Name</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="txtOilName" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Quantity</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="txtOilQuantity" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Opening Meter Reading</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id="txtOpeningReading" class="form-control" placeholder="">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row clearfix">
-                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                        <label for="email_address_2">2.</label>
-                                    </div>
-                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label>Oil Change Required</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id="email_address_2" class="form-control" placeholder="">
+                                                <input type="number" id="txtOilChangeRequired" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Next Change</label>
+                                        <div class="form-group">
+                                            <div class="form-line focused">
+                                                <input type="text" id="txtNextChange" class="form-control" placeholder="" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Current Reading</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id="txtCurrentReading" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Completed Mileage</label>
+                                        <div class="form-group">
+                                            <div class="form-line focused">
+                                                <input type="text" id="txtCompletedMileage" class="form-control" placeholder="" disabled>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row clearfix">
-                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                        <label for="email_address_2">3.</label>
-                                    </div>
-                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label>Over(+) / Under(-)</label>
                                         <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address_2" class="form-control" placeholder="">
+                                            <div class="form-line focused">
+                                                <input type="number" id="txtOverUnder" class="form-control" placeholder="" disabled>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                        <label for="email_address_2">4.</label>
-                                    </div>
-                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                                    <div class="col-md-3">
+                                        <label>Person to Remind</label>
                                         <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address_2" class="form-control" placeholder="">
+                                            <select class="form-control show-tick form-line">
+                                                <option value="">Please select</option>
+                                                <option value="1">Arslan</option>
+                                                <option value="2">Mian</option>
+                                                <option value="3">Bilal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="newVehicle">Add New Person</label>
+                                        <div class="form-group">
+                                            <div class="button-demo js-modal-buttons">
+                                                <button type="button" class="btn bg-light-blue waves-effect" data-toggle="modal" data-target="#mdModal1">+ Add New</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Comments</label>
+                                        <div class="form-group">
+                                            <div class="form-line focused">
+                                                <textarea rows="2" class="form-control no-resize" id="txtComments" placeholder=""></textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div align="right">
-                                    <button type="button" class="btn btn-primary m-t-15 waves-effect">SAVE</button>
+                                    <button type="button" class="btn btn-primary m-t-15 waves-effect">SUBMIT</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!--Modal Start-->
             <div class="modal fade" id="mdModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
@@ -353,17 +296,54 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <label for="depotCode">Code</label>
                                             <input type="text" id="txtNewDepotCode" class="form-control" placeholder="">
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <label for="depotName">Number</label>
                                             <input type="text" id="txtNewDepotName" class="form-control" placeholder="">
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <label for="depotName">Model</label>
                                             <input type="text" id="txtNewDepotName" class="form-control" placeholder="">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="depotName">Owner</label>
+                                            <input type="text" id="txtNewDepotName" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-link waves-effect">SAVE CHANGES</button>
+                            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Modal End-->
+            <!--Second Modal-->
+            <div class="modal fade" id="mdModal1" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content modal-col-light-blue">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="defaultModalLabel">ADD NEW PERSON</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div id="alertdiv" class="row">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <label for="depotCode">Name</label>
+                                            <input type="text" id="txtPersonName" class="form-control" placeholder="">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <label for="depotName">Number</label>
+                                            <input type="number" id="txtPersonNumber" class="form-control" placeholder="">
                                         </div>
                                     </div>
                                 </div>
