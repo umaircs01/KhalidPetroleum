@@ -135,10 +135,15 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3">
-                                        <label for="vehicleNo">Vehicle Code</label>
+                                        <label for="vehicleNo">Vehicle Number</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id=txtVechileNo class="form-control" placeholder="Enter Vehicle Code">
+                                                <select class="form-control show-tick">
+                                                    <option value="">Please select</option>
+                                                    <option value="1">LEP-727</option>
+                                                    <option value="2">LE-1098</option>
+                                                    <option value="3">JP-090</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -297,20 +302,27 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="row">
                                         <div class="col-md-3">
-                                            <label for="depotCode">Code</label>
-                                            <input type="text" id="txtNewDepotCode" class="form-control" placeholder="">
-                                        </div>
-                                        <div class="col-md-3">
                                             <label for="depotName">Number</label>
-                                            <input type="text" id="txtNewDepotName" class="form-control" placeholder="">
+                                            <input type="text" id="txtVehicleNumber" class="form-control" placeholder="">
                                         </div>
                                         <div class="col-md-3">
                                             <label for="depotName">Model</label>
-                                            <input type="text" id="txtNewDepotName" class="form-control" placeholder="">
+                                            <input type="text" id=txtVehicleModel class="form-control" placeholder="">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="depotName">Vehicle Type</label>
+                                            <select class="form-control show-tick">
+                                                <option value="">Please select</option>
+                                                <option value="10">Tanker</option>
+                                                <option value="20">Car</option>
+                                                <option value="30">Bike</option>
+                                                <option value="40">Generator</option>
+                                                <option value="50">Other</option>
+                                            </select>
                                         </div>
                                         <div class="col-md-3">
                                             <label for="depotName">Owner</label>
-                                            <input type="text" id="txtNewDepotName" class="form-control" placeholder="">
+                                            <input type="text" id="txtVehicleOwner" class="form-control" placeholder="">
                                         </div>
                                     </div>
                                 </div>

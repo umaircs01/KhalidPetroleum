@@ -137,7 +137,20 @@
                                         <label for="vehicleNo">Vehicle No</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id=txtVechileNo class="form-control" placeholder="Enter Vehicle Number">
+                                                <select class="form-control show-tick">
+                                                    <option value="">Please select</option>
+                                                    <option value="1">LEP-727</option>
+                                                    <option value="2">LE-1098</option>
+                                                    <option value="3">JP-090</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="captainName">VCM</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id=txtVCM class="form-control" placeholder="Enter VCM's Name">
                                             </div>
                                         </div>
                                     </div>
@@ -149,17 +162,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <label for="openingMeter">Opening Meter</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="number" id=txtOpeningMeter class="form-control" placeholder="Enter Reading of meter">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div align="right">
-                                    <button type="button" class="btn btn-primary m-t-15 waves-effect">SAVE</button>
                                 </div>
                             </form>
                         </div>
@@ -230,9 +232,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div align="right">
-                                    <button type="button" class="btn btn-primary m-t-15 waves-effect">SAVE</button>
-                                </div>
                             </form>
                         </div>
                     </div>
@@ -249,65 +248,57 @@
                         </div>
                         <div class="body">
                             <form>
-                                <label for="super">SUP</label>
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id="txtPumpSup" class="datepicker form-control" placeholder="Pump">
+                                                <label for="super">SUP</label>
+                                                <select class="form-control show-tick">
+                                                    <option value="1">Pump</option>
+                                                    <option value="2">MachiKey</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id=txtMachiKeySup class="form-control" placeholder="MachiKey">
+                                                <label></label>
+                                                <input type="number" id=txtRateSup class="form-control" placeholder="Rate">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id=txtRateSup class="form-control" placeholder="Rate">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <div class="form-line">
+                                                <label></label>
                                                 <input type="number" id=txtQuantitySup class="form-control" placeholder="Quantity">
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
-                            <form>
-                                <label for="diesel">HSD</label>
-                                <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id="txtPumpHsd" class="datepicker form-control" placeholder="Pump">
+                                                <label>HSD</label>
+                                                <select class="form-control show-tick">
+                                                    <option value="1">Pump</option>
+                                                    <option value="2">MachiKey</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id=txtMachiKeyHsd class="form-control" placeholder="MachiKey">
+                                                <label></label>
+                                                <input type="number" id=txtRateHsd class="form-control" placeholder="Rate">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id=txtRateHsd class="form-control" placeholder="Rate">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <div class="form-line">
+                                                <label></label>
                                                 <input type="number" id=txtQuantityHsd class="form-control" placeholder="Quantity">
                                             </div>
                                         </div>
@@ -378,24 +369,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <label for="Exp">Expenses Provided</label>
-                                        <div class="form-group">
-                                            <div class="form-line focused">
-                                                <input type="number" id=txtExpProvided value="Focused" class="form-control" placeholder="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <label for="GainLoss">Gain/Loss</label>
-                                        <div class="form-group">
-                                            <div class="form-line disabled">
-                                                <input type="number" id=txtGainLoss class="form-control" placeholder="" disabled>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </form>
                         </div>
                     </div>
@@ -412,58 +385,57 @@
                         <div class="body">
                             <div class="row">
                                 <form>
-                                    <div>
-                                        <div class="col-md-3">
-                                            <label for="HSD">HSD</label>
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="text" id="txtRateHsdFuel" class="datepicker form-control" placeholder="Rate">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <label for=""> </label>
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="text" id=txtQuantityHsdFuel class="form-control" placeholder="Quantity">
-                                                </div>
+                                    <div class="col-md-3">
+                                        <label>Fuel Type</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <select class="form-control show-tick">
+                                                    <option value="">Please select</option>
+                                                    <option value="hsd">HSD</option>
+                                                    <option value="lube">Lube</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div>
-                                        <div class="col-md-3">
-                                            <label for="Lube">Lube</label>
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="text" id="txtRateLubeFuel" class="datepicker form-control" placeholder="Rate">
-                                                </div>
+                                    <div class="col-md-2">
+                                        <label for="">Rate </label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id="txtRateLubeFuel" class="datepicker form-control" placeholder="Rate">
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
-                                            <label for=""> </label>
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="text" id=txtQuantityLubeFuel class="form-control" placeholder="Quantity">
-                                                </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="">Quantity </label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtQuantityLubeFuel class="form-control" placeholder="Quantity">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>Opening Meter</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id="txtOpeningMeter" value="Focused" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="ClosingMeter">Closing Meter</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" id=txtClosingMeter value="Focused" class="form-control" placeholder="">
                                             </div>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                             <div class="row">
-                                <div class="col-md-3">
-                                    <label for="ClosingMeter">Closing Meter</label>
-                                    <div class="form-group">
-                                        <div class="form-line focused">
-                                            <input type="number" id=txtClosingMeter value="Focused" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="col-md-2">
                                     <label for="km">Total Kilometers</label>
                                     <div class="form-group">
-                                        <div class="form-line disabled">
+                                        <div class="form-line disabled focused">
                                             <input type="number" id=txtKilometers class="form-control" placeholder="" disabled>
                                         </div>
                                     </div>
@@ -471,7 +443,7 @@
                                 <div class="col-md-2">
                                     <label for="average">Average</label>
                                     <div class="form-group">
-                                        <div class="form-line disabled">
+                                        <div class="form-line focused disabled">
                                             <input type="number" id=txtAverage class="form-control" placeholder="" disabled>
                                         </div>
                                     </div>
@@ -526,7 +498,7 @@
                                     </div>
                                 </div>
                                 <div align="right">
-                                    <button type="button" class="btn btn-primary m-t-15 waves-effect">SAVE</button>
+                                    <button type="button" class="btn btn-primary m-t-15 waves-effect">ADD</button>
                                 </div>
                             </form>
                         </div>
@@ -567,6 +539,9 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div align="right">
+                                <button type="button" class="btn btn-primary m-t-15 waves-effect">SUBMIT</button>
                             </div>
                         </div>
                     </div>

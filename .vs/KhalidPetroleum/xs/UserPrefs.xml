@@ -2,14 +2,14 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="KhalidPetroleum Status">
     <Files>
       <File FileName="KhalidPetroleum/Controllers/MainController.cs" Line="51" Column="10" />
-      <File FileName="KhalidPetroleum/Views/Main/Checklist.cshtml" Line="375" Column="46" />
-      <File FileName="KhalidPetroleum/Views/Main/Attendance.cshtml" Line="104" Column="22" />
+      <File FileName="KhalidPetroleum/Views/Main/Attendance.cshtml" Line="404" Column="42" />
       <File FileName="KhalidPetroleum/Views/Main/Index.cshtml" Line="129" Column="21" />
       <File FileName="KhalidPetroleum/Views/Main/DailyExpenses.cshtml" Line="108" Column="26" />
       <File FileName="KhalidPetroleum/Views/Main/CashReceived.cshtml" Line="105" Column="26" />
       <File FileName="KhalidPetroleum/Views/Main/Payments.cshtml" Line="106" Column="26" />
-      <File FileName="KhalidPetroleum/Views/Main/SalePurchase.cshtml" Line="531" Column="36" />
-      <File FileName="KhalidPetroleum/Views/Main/Maintenance.cshtml" Line="351" Column="31" />
+      <File FileName="KhalidPetroleum/Views/Main/SalePurchase.cshtml" Line="294" Column="69" />
+      <File FileName="KhalidPetroleum/Views/Main/Maintenance.cshtml" Line="302" Column="86" />
+      <File FileName="KhalidPetroleum/Views/Main/Checklist.cshtml" Line="384" Column="29" />
       <File FileName="KhalidPetroleum/Views/Main/Tasks.cshtml" Line="325" Column="45" />
       <File FileName="KhalidPetroleum/Views/Main/Staff.cshtml" Line="191" Column="88" />
       <File FileName="KhalidPetroleum Status" />
