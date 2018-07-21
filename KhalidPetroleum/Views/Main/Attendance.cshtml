@@ -10,15 +10,39 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     <!-- Bootstrap Core Css -->
+    <!-- Bootstrap Core Css -->
     <link href="~/Content/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <!-- Bootstrap Material Datetime Picker Css -->
-    <link href="~/Content/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
     <!-- Waves Effect Css -->
     <link href="~/Content/plugins/node-waves/waves.css" rel="stylesheet" />
+
     <!-- Animation Css -->
     <link href="~/Content/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Colorpicker Css -->
+    <link href="~/Content/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+
+    <!-- Dropzone Css -->
+    <link href="~/Content/plugins/dropzone/dropzone.css" rel="stylesheet">
+
+    <!-- Multi Select Css -->
+    <link href="~/Content/plugins/multi-select/css/multi-select.css" rel="stylesheet">
+
+    <!-- Bootstrap Spinner Css -->
+    <link href="~/Content/plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="~/Content/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <!-- Bootstrap Select Css -->
+    <link href="~/Content/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- noUISlider Css -->
+    <link href="~/Content/plugins/nouislider/nouislider.min.css" rel="stylesheet" />
+
     <!-- Custom Css -->
     <link href="~/Css/style.css" rel="stylesheet">
+
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="~/Css/themes/all-themes.css" rel="stylesheet" />
 </head>
@@ -187,8 +211,22 @@
                                         </td>
                                         <td>
                                             <p id="datepairExample">
-                                                <input type="text" class="time start" /> to
-                                                <input type="text" class="time end" />
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="material-icons">access_time</i>
+                                                    </span>
+                                                    <div class="form-line">
+                                                        <input type="text" class="form-control time12" placeholder="Ex: 11:59 pm">
+                                                    </div>
+                                                </div> to
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="material-icons">access_time</i>
+                                                    </span>
+                                                    <div class="form-line">
+                                                        <input type="text" class="form-control time12" placeholder="Ex: 11:59 pm">
+                                                    </div>
+                                                </div>
                                             </p>
                                         </td>
                                     </tr>
@@ -378,34 +416,51 @@
     </section>
     <!-- Jquery Core Js -->
     <script src="~/Content/plugins/jquery/jquery.min.js"></script>
+
     <!-- Bootstrap Core Js -->
     <script src="~/Content/plugins/bootstrap/js/bootstrap.js"></script>
+
     <!-- Select Plugin Js -->
     <script src="~/Content/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
     <!-- Slimscroll Plugin Js -->
     <script src="~/Content/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Bootstrap Colorpicker Js -->
+    <script src="~/Content/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+
+    <!-- Dropzone Plugin Js -->
+    <script src="~/Content/plugins/dropzone/dropzone.js"></script>
+
+    <!-- Input Mask Plugin Js -->
+    <script src="~/Content/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+
+    <!-- Multi Select Plugin Js -->
+    <script src="~/Content/plugins/multi-select/js/jquery.multi-select.js"></script>
+
+    <!-- Jquery Spinner Plugin Js -->
+    <script src="~/Content/plugins/jquery-spinner/js/jquery.spinner.js"></script>
+
+    <!-- Bootstrap Tags Input Plugin Js -->
+    <script src="~/Content/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
     <!-- Waves Effect Plugin Js -->
     <script src="~/Content/plugins/node-waves/waves.js"></script>
-    <!-- Custom Js -->
-    <script src="~/Scripts/js/admin.js"></script>
-    <!-- Demo Js -->
-    <script src="~/Scripts/js/demo.js"></script>
-    <!-- Moment Plugin Js -->
-    <script src="~/Content/plugins/momentjs/moment.js"></script>
-    <!-- Bootstrap Material Datetime Picker Plugin Js -->
-    <script src="~/Content/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+
+
     <script>
-        $('#datepairExample .time').timepicker({
-                    'showDuration': true,
-                    'timeFormat': 'g:ia'
+        $(document).ready(function(){
+
+            @*$('#datepairExample .time').timepicker({
+                'showDuration': true,
+                'timeFormat': 'g:ia'
+            });*@
+            alert("HAHAH");
         });
 
-        $('#datepairExample .date').datepicker({
-                    'format': 'yyyy-m-d',
-                    'autoclose': true
-        });
 
-        $('#datepairExample').datepair();
-</script>
+
+    </script>
 </body>
 </html>
