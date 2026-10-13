@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run site (IIS Express)",
+            "type": "process",
+            "command": "C:\\Program Files\\IIS Express\\iisexpress.exe",
+            "args": [
+                "/path:${workspaceFolder}\\KhalidPetroleum",
+                "/port:8080",
+                "/clr:v4.0"
+            ],
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "iisexpress",
+                "pattern": { "regexp": "^__never_matches__$" },
+                "background": {
+                    "activeAtBeginning": true,
+                    "beginsPattern": "^Starting IIS Express",
+                    "endsPattern": "^IIS Express is running"
+                }
+            },
+            "presentation": { "reveal": "always", "panel": "dedicated" },
+            "group": { "kind": "build", "isDefault": true }
+        },
+        {
+            "label": "Open site in browser",
+            "type": "shell",
+            "command": "Start-Process http://localhost:8080/",
+            "options": { "shell": { "executable": "powershell.exe", "args": ["-NoProfile", "-Command"] } },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run site and open browser",
+            "dependsOrder": "sequence",
+            "dependsOn": ["Run site (IIS Express)", "Open site in browser"],
+            "problemMatcher": []
+        }
+    ]
+}
